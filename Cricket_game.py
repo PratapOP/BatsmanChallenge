@@ -39,7 +39,7 @@ def play_game():
         shot_choice = input("Enter your choice (1-4): ")
 
         if shot_choice == "1":
-            outcome = random.choices(["0", "1", "2", "4", "6", "OUT"], weights=[40, 30, 20, 10, 5])[0]
+            outcome = random.choices(["0", "1", "2", "4", "6", "OUT"], weights=[40, 30, 20, 10, 5, 5])[0]
         elif shot_choice == "2":
             outcome = random.choices(["0", "1", "2", "4", "6", "OUT"], weights=[25, 35, 25, 20, 10, 10])[0]
         elif shot_choice == "3":
