@@ -39,13 +39,13 @@ def play_game():
         shot_choice = input("Enter your choice (1-4): ")
 
         if shot_choice == "1":
-            outcome = random.choices(["0", "1", "2", "4", "OUT"], weights=[40, 30, 20, 10, 10])[0]
+            outcome = random.choices(["0", "1", "2", "4", "6", "OUT"], weights=[40, 30, 20, 10, 5])[0]
         elif shot_choice == "2":
-            outcome = random.choices(["0", "1", "2", "4", "6" , "OUT"], weights=[25, 35, 25, 15, 5, 15])[0]
+            outcome = random.choices(["0", "1", "2", "4", "6", "OUT"], weights=[25, 35, 25, 20, 10, 10])[0]
         elif shot_choice == "3":
-            outcome = random.choices(["0", "1", "2", "4", "6", "OUT"], weights=[10, 15, 20, 30, 25, 20])[0]
+            outcome = random.choices(["0", "1", "2", "4", "6", "OUT"], weights=[10, 15, 20, 35, 25, 15])[0]
         elif shot_choice == "4":
-            outcome = random.choices(["0", "1", "2", "4", "6", "OUT"], weights=[10, 10, 10, 30, 35, 25])[0]
+            outcome = random.choices(["0", "1", "2", "4", "6", "OUT"], weights=[10, 10, 10, 40, 40, 30])[0]
         else:
             print("Invalid choice. Try again.")
             continue
